@@ -129,8 +129,12 @@ void rviz_distance_tool::DistanceTool::configureStatus(const Ogre::Vector3 &star
 {
   // Write the string for the bottom status bar
   const Ogre::Vector3 delta = end - start;
+  const double xyDistance = std::hypot(delta.x, delta.y);
+  const double xzDistance = std::hypot(delta.x, delta.z);
+  const double zyDistance = std::hypot(delta.y, delta.z);
   std::ostringstream oss;
-  oss << "Distance = " << delta.length() << " [x,y,z = " << delta.x << ", " << delta.y << ", " << delta.z << "]";
+  oss << "Distance = " << delta.length() << " [x,y,z = " << delta.x << ", " << delta.y << ", " << delta.z
+      << ", xy = " << xyDistance << ", xz = " << xzDistance << ", zy = " << zyDistance << "]";
   setStatus(QString::fromStdString(oss.str()));
 }
 

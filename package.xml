@@ -4,7 +4,9 @@
   <version>0.1.0</version>
   <description>The rviz_distance_tool package</description>
 
+  <author email="jmeyer1292@gmail.com">Jon Meyer</author>
   <maintainer email="jmeyer1292@gmail.com">Jon Meyer</maintainer>
+  <maintainer email="hugo.laloge@gmail.com">Hugo Laloge</maintainer>
 
   <license>Apache 2.0</license>
 

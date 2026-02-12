@@ -1,6 +1,8 @@
 #ifndef RVIZ_DISTANCE_TOOL_H
 #define RVIZ_DISTANCE_TOOL_H
 
+#include <array>
+
 #include <rviz/tool.h>
 #include <OgreVector3.h>
 
